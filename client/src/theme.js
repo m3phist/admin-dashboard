@@ -40,6 +40,17 @@ export const tokensDark = {
     800: '#665429',
     900: '#332a14',
   },
+  teal: {
+    100: '#d3f0ee',
+    200: '#a6e2dc',
+    300: '#7ad3cb',
+    400: '#4dc5b9',
+    500: '#21b6a8',
+    600: '#1a9286',
+    700: '#146d65',
+    800: '#0d4943',
+    900: '#072422',
+  },
 };
 
 // function that reverses the color palette
