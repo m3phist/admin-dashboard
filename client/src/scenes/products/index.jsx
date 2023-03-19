@@ -10,6 +10,8 @@ import {
   Rating,
   useTheme,
   useMediaQuery,
+  CircularProgress,
+  Skeleton,
 } from "@mui/material";
 import Header from "components/Header";
 import { useGetProductsQuery } from "state/api";
@@ -38,7 +40,7 @@ const Product = ({
       <CardContent>
         <Typography
           sx={{ fontSize: 14 }}
-          color={theme.palette.secondary[700]}
+          color={theme.palette.secondary[500]}
           gutterBottom
         >
           {category.toUpperCase()}
@@ -130,7 +132,9 @@ const Products = () => {
           )}
         </Box>
       ) : (
-        <>Loading...</>
+        <Box sx={{ pt: 0.5 }}>
+          <Skeleton width="100%" height="80vh" />
+        </Box>
       )}
     </Box>
   );
