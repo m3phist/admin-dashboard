@@ -199,7 +199,19 @@ const Sidebar = ({
               })}
             </List>
           </Box>
-          <Box bottom="2rem">
+          <Box
+            bottom="2rem"
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "flex-end",
+              p: 1,
+              m: 1,
+              bgcolor: theme.palette.primary.alt,
+              height: 124,
+              borderRadius: 1,
+            }}
+          >
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
