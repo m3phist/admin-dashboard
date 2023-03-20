@@ -59,6 +59,13 @@ const Customers = () => {
           getRowId={(row) => row._id}
           rows={data || []}
           columns={columns}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 25,
+              },
+            },
+          }}
           sx={{
             "& .MuiDataGrid-root": {
               border: "none",
