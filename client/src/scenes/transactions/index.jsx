@@ -72,7 +72,7 @@ const Transactions = () => {
   return (
     <Box m="1.5rem 2.5rem">
       <Header title="TRANSACTIONS" subtitle="Entire list of transactions" />
-      <Box mt="40px" height="80vh">
+      <Box mt="40px" height="70vh">
         <DataGrid
           loading={isLoading || !data}
           getRowId={(row) => row._id}
