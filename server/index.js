@@ -21,6 +21,7 @@ import {
   dataProductStat,
   dataTransaction,
 } from "./data/index.js";
+import { fakerDataUser } from "./data/faker.js";
 
 /* CONFIG */
 dotenv.config();
@@ -57,5 +58,7 @@ mongoose
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
     // Transaction.insertMany(dataTransaction);
+    // User.insertMany(fakerDataUser);
+    // console.log(fakerDataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
