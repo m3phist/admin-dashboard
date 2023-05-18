@@ -10,7 +10,6 @@ import {
   Rating,
   useTheme,
   useMediaQuery,
-  CircularProgress,
   Skeleton,
 } from "@mui/material";
 import Header from "components/Header";
